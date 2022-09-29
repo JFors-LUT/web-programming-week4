@@ -5,12 +5,12 @@ const submitButton = document.getElementById("submit-data");
 const showTable = document.getElementById>("show-table");
 
 
-
 submitButton.addEventListener("click", async function(){
   q = textShow.value;
   textShow.value = "";
-  
+  console.log("getting data...")
   getShowData(q);
+  console.log("Got data")
 })
 
 async function getShowData(showName){

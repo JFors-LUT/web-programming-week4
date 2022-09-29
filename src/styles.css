@@ -24,7 +24,7 @@ img{
   width: 100%;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 801px) {
   .show-data{
     display: flex ;
   }
@@ -32,14 +32,16 @@ img{
   .show-info{
     padding: 10px;
   }
-
-  img{
-    margin: auto;
-  }
-
-  .show-info > p{
-    text-align: center;
-     padding: 10px;
-  }
   
+}
+
+@media (max-width: 800px) {
+.show-info > p{
+  text-align: center;
+   padding: 10px;
+}
+
+img{
+  margin: auto;
+}
 }

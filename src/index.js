@@ -25,6 +25,9 @@ async function getShowData(showName){
     let divInfo = document.createElement("div");
     divInfo.className = "show-info";
 
+    let divAnfo = document.createElement("div");
+    divInfo.className = "show-naked";
+
     let head1 = document.createElement("h1");
     head1.innerText = element.show.name;
 
@@ -41,6 +44,7 @@ async function getShowData(showName){
     divInfo.appendChild(summary);
     
     divData.append(divInfo);
+    divData.append(divAnfo);
     document.body.appendChild(divData);
 
 
